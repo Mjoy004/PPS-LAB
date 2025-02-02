@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>  // For M_PI constant
+
+int main() {
+    float radius, area;
+
+    // Asking user for the radius
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    // Calculating the area
+    area = M_PI * radius * radius;
+
+    // Displaying the result
+    printf("The area of the circle 
