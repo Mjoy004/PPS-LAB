@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    float fnum;
+    char str[100];
+
+    // Taking inputs from the user
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    
+    printf("Enter a floating-point number: ");
+    scanf("%f", &fnum);
+    
+    printf("Enter a string: ");
+    // To read a string with spaces, use fgets instead of scanf
+    getchar(); // To clear the newline left by previous input
+    fgets(str, sizeof(str), stdin);  // Reads a string with spaces
+
+    // Displaying the inputs
+    printf("\nYou entered:\n");
+    printf("Integer: %d\n", num);
+    printf("Floating-point number: %.2f\n", fnum);
+    printf("String: %s\n", str);
+
+    return 0;
+}
